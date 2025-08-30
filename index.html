@@ -19,7 +19,7 @@
     -->
     <script>
       window.onload = function () {
-        alert("Welcome! Scan the Hiro marker to see some magic.");
+        alert("Welcome! Scan the Hiro marker on your piece of paper to see the 3D structure of propane.");
       };
     </script>
   </head>
@@ -48,15 +48,15 @@
           make sure that the model file is placed in the same repository where this index.html file is located
         -->
         <a-asset-item
-          id="paracetamol-obj"
-          src="paracetamol.obj"
+          id="propane-obj"
+          src="propane.obj"
         >
         <!-- this is a commment: repeat the same for mtl file
         -->
         </a-asset-item>
         <a-asset-item
-          id="paracetamol-mtl"
-          src="paracetamol.mtl"
+          id="propane-mtl"
+          src="propane.mtl"
         >
         </a-asset-item>
       </a-assets>
@@ -88,11 +88,11 @@
         OBJ 3D models cannot have animation
       -->
         <a-entity
-          id="paracetamol-model"
-          obj-model="obj: #paracetamol-obj; mtl: #paracetamol-mtl"
+          id="propane-model"
+          obj-model="obj: #propane-obj; mtl: #propane-mtl"
           position="0 0 0"
-          rotation="90 0 0"
-          scale="0.75 0.75 0.75"
+          rotation="0 0 0"
+          scale="1 1 1"
           class="clickable"
           gesture-handler        
         >
